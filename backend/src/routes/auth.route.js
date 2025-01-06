@@ -19,7 +19,7 @@ router.post("/login", login);
 router.post("/logout", logout);
 
 // PUT Routes 👇
-router.put("update-profile", protectRoute, updateProfile);
+router.put("/update-profile", protectRoute, updateProfile);
 
 
 
