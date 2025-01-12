@@ -7,8 +7,7 @@ import morgan from "morgan"
 import authRoutes from "./routes/auth.route.js";
 import messageRoutes from "./routes/message.route.js";
 import { connectDB } from "./lib/db.js";
-
-const app = express();
+import { app, server } from "./lib/socket.js"
 
 dotenv.config();
 const PORT = process.env.PORT;
@@ -28,7 +27,7 @@ app.use(
 app.use("/api/auth/", authRoutes);
 app.use("/api/messages", messageRoutes);
 
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log("Server listening on port:", +PORT);
   connectDB();
 });
