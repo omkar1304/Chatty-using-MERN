@@ -1,6 +1,6 @@
 # ✨ Full Stack Realtime Chat App - Chatty✨
 
-[Link Link](https://chatty-connect.vercel.app/)
+[Live Link](https://chatty-connect.vercel.app/)
 
 Highlights:
 
